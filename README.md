@@ -1,5 +1,3 @@
-# Instructions for Software accompanying "Long-term Priors Influence Visual Perception through Recruitment of Long-range Feedback" by Richard Hardstone et al.
-
 ## All Code written by Richard Hardstone.
 
 ## System Requirements:
@@ -26,4 +24,3 @@
 * Data.Subjects.Granger.(permutationType).(image).Frequency.maxClusterSize* contains the max frequency cluster size for each permutation (used in Figures 3D,S3,S4E)
 * Data.Subjects.Granger.(permutationType).(image).Frequency.Percentage* contains the percentage feedforward/feedback for the frequency domain Granger causality results (plotted in Figures 3D,S3,S4E)
 * Data.Subjects.Granger.(permutationType).(image).Frequency.pValue* contains the uncorrected significance of the feedforward/feedback bias for the frequency domain Granger causality results (plotted in Figures 3D,S3,S4E).
-
