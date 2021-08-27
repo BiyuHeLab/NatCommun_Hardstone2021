@@ -1,0 +1,19 @@
+function LongitudinalBias
+%Calculates intraclass correlation for perceptual bias for 24 subjects
+%recorded across 3 sessions
+
+load('Data.mat');
+
+[faceVase_ICC, ~, ~, faceVase_f, faceVase_df1, faceVase_df2, faceVase_p] = ICC(Data.Longitudinal.FaceVaseBias.z, '1-1');
+[cube_ICC, ~, ~, cube_f, cube_df1, cube_df2, cube_p] = ICC(Data.Longitudinal.CubeBias.z, '1-1');
+
+disp('Longitudinal results')
+disp(['FaceVase: ICC= ' num2str(faceVase_ICC) ...
+               ' F= ' num2str(faceVase_f) ...
+               ' df= ' num2str(faceVase_df1) ',' num2str(faceVase_df2) ...
+               ' p= ' num2str(faceVase_p)]);
+          
+disp(['Cube: ICC= ' num2str(cube_ICC) ...
+               ' F= ' num2str(cube_f) ...
+               ' df= ' num2str(cube_df1) ',' num2str(cube_df2) ...
+               ' p= ' num2str(cube_p)]);
