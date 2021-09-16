@@ -92,5 +92,5 @@ disp(pValue_CubeNonPreferred)
 
 %%
 disp('')
-disp(['Cube Preferred: (Occipital-> Frontal,Frontal->Occipital,p-value) (' num2str(Output.Cube.GreaterGCPreferredTrials_LobeCount(1,4)) ',' num2str(Output.Cube.GreaterGCPreferredTrials_LobeCount(4,1)) ', ' num2str(Output.Cube.GreaterGCPreferredTrials_LobePValue(1,4)) ')']);
-disp(['Cube Non-Preferred: (Occipital-> Frontal,Frontal->Occipital,p-value)(' num2str(Output.Cube.GreaterGCNonPreferredTrials_LobeCount(1,4)) ',' num2str(Output.Cube.GreaterGCNonPreferredTrials_LobeCount(4,1)) ', ' num2str(Output.Cube.GreaterGCNonPreferredTrials_LobePValue(1,4)) ')']);
+disp(['Cube Preferred: Occipital-> Frontal Preferred (' num2str(Output.Cube.GreaterGCPreferredTrials_LobeCount(1,4)) ',' num2str(Output.Cube.GreaterGCPreferredTrials_LobeCount(4,1)) ') ' num2str(Output.Cube.GreaterGCPreferredTrials_LobePValue(1,4))]);
+disp(['Cube Non-Preferre: Occipital-> Frontal NonPreferred (' num2str(Output.Cube.GreaterGCNonPreferredTrials_LobeCount(1,4)) ',' num2str(Output.Cube.GreaterGCNonPreferredTrials_LobeCount(4,1)) ') ' num2str(Output.Cube.GreaterGCNonPreferredTrials_LobePValue(1,4))]);

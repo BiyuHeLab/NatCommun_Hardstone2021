@@ -37,7 +37,7 @@ for i_condition = 1:7
     conditionData = conditionData(~isnan(conditionData))-50;
     [pCube(i_condition),~,stats] = signrank(conditionData,0,'method','approximate');
     zCube(i_condition) = stats.zval;
-    disp(['Cube: ' Data.Online.fvLabel{i_condition} ' p-Value(uncorrected) = ' num2str(pCube(i_condition),3) ' z-Value = '  num2str(zCube(i_condition),3)]);
+    disp(['Cube: ' Data.Online.cbLabel{i_condition} ' p-Value(uncorrected) = ' num2str(pCube(i_condition),3) ' z-Value = '  num2str(zCube(i_condition),3)]);
 end
 
 validSubjectsCubeAllConditions = find(sum(cubeData > 90 | cubeData < 10,2)==0);
